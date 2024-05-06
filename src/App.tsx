@@ -1,11 +1,11 @@
-import { Button } from "./shadcn/components/ui/button";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home/Home";
 
 function App() {
   return (
-    <div className="text-red-500">
-      hello
-      <Button>click</Button>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />}></Route>
+    </Routes>
   );
 }
 
