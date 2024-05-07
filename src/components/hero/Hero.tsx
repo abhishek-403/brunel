@@ -5,8 +5,10 @@ import img1 from "../../assets/hero-img1-cropped.png";
 import { Button } from "../../shadcn/components/ui/button";
 import sparkle from "../../assets/sparkle.svg";
 import rocketIcon from "../../assets/icon-rocket.svg";
+import { useNavigate } from "react-router-dom";
 
 export default function Hero({}: Props) {
+  const navigate= useNavigate()
   return (
     <div className="w-full flex flex-col items-center gap-14">
       <div className="flex items-center justify-center flex-col  text-center">
@@ -55,10 +57,10 @@ export default function Hero({}: Props) {
           </div>
         </div>
         <div className="flex-1 gap-8 flex flex-col">
-          <div className=" font-manrope text-[40px] font-semibold leading-[3.5rem]">
+          <div className="w-[400px] font-manrope text-[30px] font-semibold leading-[3rem]">
             Enhance fortune 50 company’s insights teams research capabilities
           </div>
-          <div className="">
+          <div onClick={()=>navigate('/register')} className="">
             <Button className="rounded-full h-[60px] ">
               <div className="flex gap-5 items-center justify-center p-5">
                 <p className="text-xl ">Explore More</p>
