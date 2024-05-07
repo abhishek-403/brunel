@@ -1,3 +1,4 @@
+
 # Brunel - Demo project
 
 To run the project locally :
@@ -9,11 +10,12 @@ To run the project locally :
 ```
 2. Run the project
 
-  ```bash
+    ```bash
     npm run dev
-  ```
-  or
-  ```bash
-  yarn dev
-  ```
+    ```
+      or
+
+    ```bash
+    yarn dev
+    ```
 
